@@ -13,12 +13,12 @@ public class Menu {
             int pilihan = Dashboard.sc.nextInt();
             Dashboard.sc.nextLine();
             switch (pilihan) {
-                case 1: 
+                case 1:
                     TambahMahasiswa.AddMahasiswa();
                     break;
-                case 2: 
+                case 2:
                     break;
-                case 3: 
+                case 3:
                     CariBerdasarkanProdi.cariBerdasarkanProdi();
                     break;
                 case 4:
@@ -32,6 +32,6 @@ public class Menu {
                     System.out.println("Pilihan tidak valid. Silakan coba lagi.");
                     break;
             }
-        } 
-    } 
+        }
+    }
 }
