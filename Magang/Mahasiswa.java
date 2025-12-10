@@ -5,7 +5,7 @@ public class Mahasiswa {
     public static String[] nim = new String[100];
     public static String[] prodi = new String[100];
     public static String[] tempatMagang = new String[100];
-    public static Integer[] semester = new Integer[100];
+    public static int[] semester = new int[100];
     public static String[] status = new String[100];
     public static int id = 0;
 }
