@@ -19,6 +19,7 @@ public class Menu {
                 case 2: 
                     break;
                 case 3: 
+                    CariBerdasarkanProdi.cariBerdasarkanProdi();
                     break;
                 case 4:
                     Statistik.HitungStatus();
