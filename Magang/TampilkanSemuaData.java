@@ -1,27 +1,26 @@
 package Magang;
 
 public class TampilkanSemuaData {
-    public static void TampilkanSemuaData() {
+    public static void tampilkanSemuaData() {
         System.out.println("\n=== DATA PENDAFTAR MAGANG ===");
 
-        if (jumlahData == 0) {
-            System.out.println("Belum ada data!");
+        if (Mahasiswa.id == 0) {
+            System.out.println("Belum ada data pendaftar magang.");
             return;
         }
 
+        System.out.printf("%-4s | %-25s | %-15s | %-25s | %-20s | %-10s | %-10s\n",
+                "No", "Nama", "NIM", "Prodi", "Tempat Magang", "Semester", "Status");
         System.out.println(
-                "--------------------------------------------------------------------------------------------");
-        System.out.printf("| %-3s | %-20s | %-10s | %-15s | %-9s | %-10s |\n",
-                "No", "Nama", "NIM", "Prodi", "Semester", "Status");
-        System.out.println(
-                "--------------------------------------------------------------------------------------------");
+                "------------------------------------------------------------------------------------------------------------------------------------");
 
-        for (int i = 0; i < jumlahData; i++) {
-            System.out.printf("| %-3d | %-20s | %-10s | %-15s | %-9d | %-10s |\n",
-                    (i + 1), nama[i], nim[i], prodi[i], semester[i], status[i]);
+        for (int i = 0; i < Mahasiswa.id; i++) {
+            System.out.printf("%-4d | %-25s | %-15s | %-25s | %-20s | %-10d | %-10s\n",
+                    (i + 1), Mahasiswa.nama[i], Mahasiswa.nim[i], Mahasiswa.prodi[i],
+                    Mahasiswa.tempatMagang[i], Mahasiswa.semester[i], Mahasiswa.status[i]);
         }
 
         System.out.println(
-                "--------------------------------------------------------------------------------------------");
+                "------------------------------------------------------------------------------------------------------------------------------------");
     }
 }
